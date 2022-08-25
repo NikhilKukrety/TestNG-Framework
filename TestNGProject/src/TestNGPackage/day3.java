@@ -30,6 +30,17 @@ public class day3 {
 	 *  </methods>
 	 *  </class>
 	 */
+	//IMPORTANT (ALL THESE POINTS):
+	/*Le'ts say we have 30 test cases which start with "Mobile" word, and we want to exlude them. Then use:
+	 * <exclude name = "Mobile.*"/>
+	 */
+	
+	/*To run test cases at package level, use below (check testng2.xml file):
+	 * <packages>
+	 * 	<package name = "TestNGPackage"/>
+	 * </packages>
+	 */
+	
 	
 	
 	
