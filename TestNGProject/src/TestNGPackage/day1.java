@@ -1,5 +1,7 @@
 package TestNGPackage;
 
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class day1 {
@@ -9,10 +11,22 @@ public class day1 {
 	//Tests are written as methods/functions, and inside these, we write the code.
 	//To write tests. annotations are important to write above the method:
 	
+	@AfterTest //The scope of it is test folder (test name like personal loan). This test will run with low priority at the end (for personal loan example)
+	public void lastexecution()
+	{
+		System.out.println("I will execute last");
+	}
+	
 	@Test
 	public void Demo()
 	{
 		System.out.println("Hello");
+	}
+	
+	@AfterSuite ////The scope of it is entire xml file. So this test will be executed very last at project level
+	public void Afsuite()
+	{
+		System.out.println("I am no 1 from last");
 	}
 	
 	@Test

@@ -1,5 +1,8 @@
 package TestNGPackage;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class day3 {
@@ -10,10 +13,28 @@ public class day3 {
 		System.out.println("webLoginCarLoan");
 	}
 	
+	@BeforeMethod //Basically, now this method will be executed before every time the other tests in this class run.
+	public void Beforeevery()
+	{
+		System.out.println("I will execute before every test method in day 3 class");
+	}
+	
+	@AfterMethod //Basically, now this method will be executed after every time the other tests in this class run.
+	public void Afterevery()
+	{
+		System.out.println("I will execute after every test method in day 3 class");
+	}
+	
 	@Test
 	public void MobileLoginCarLoan()
 	{
 		System.out.println("WobileLoginCarLoan");
+	}
+	
+	@BeforeSuite //The scope of it is entire xml file. So this test will be executed very first at project level
+	public void Bfsuite()
+	{
+		System.out.println("I am no 1");
 	}
 	
 	@Test

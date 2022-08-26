@@ -1,55 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="2" total="9" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-25T23:29:02 IST" name="Loan Department" finished-at="2022-08-25T23:29:02 IST" duration-ms="129">
+  <suite started-at="2022-08-27T01:08:49 IST" name="Loan Department" finished-at="2022-08-27T01:08:49 IST" duration-ms="187">
     <groups>
     </groups>
-    <test started-at="2022-08-25T23:29:02 IST" name="Personal Loan" finished-at="2022-08-25T23:29:02 IST" duration-ms="129">
+    <test started-at="2022-08-27T01:08:49 IST" name="Personal Loan" finished-at="2022-08-27T01:08:49 IST" duration-ms="62">
       <class name="TestNGPackage.day1">
-        <test-method signature="Demo()[pri:0, instance:TestNGPackage.day1@6a6afff2]" started-at="2022-08-25T23:29:02 IST" name="Demo" finished-at="2022-08-25T23:29:02 IST" duration-ms="10" status="PASS">
+        <test-method signature="Demo()[pri:0, instance:TestNGPackage.day1@a2431d0]" started-at="2022-08-27T01:08:49 IST" name="Demo" finished-at="2022-08-27T01:08:49 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo -->
-        <test-method signature="SecondTest()[pri:0, instance:TestNGPackage.day1@6a6afff2]" started-at="2022-08-25T23:29:02 IST" name="SecondTest" finished-at="2022-08-25T23:29:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="lastexecution()[pri:0, instance:TestNGPackage.day1@a2431d0]" started-at="2022-08-27T01:08:49 IST" name="lastexecution" finished-at="2022-08-27T01:08:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SecondTest -->
+        </test-method> <!-- lastexecution -->
       </class> <!-- TestNGPackage.day1 -->
       <class name="TestNGPackage.day2">
-        <test-method signature="ploan()[pri:0, instance:TestNGPackage.day2@3d1cfad4]" started-at="2022-08-25T23:29:02 IST" name="ploan" finished-at="2022-08-25T23:29:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:TestNGPackage.day2@2dde1bff]" started-at="2022-08-27T01:08:49 IST" name="prerequisite" finished-at="2022-08-27T01:08:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method signature="ploan()[pri:0, instance:TestNGPackage.day2@2dde1bff]" started-at="2022-08-27T01:08:49 IST" name="ploan" finished-at="2022-08-27T01:08:49 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ploan -->
       </class> <!-- TestNGPackage.day2 -->
-      <class name="TestNGPackage.day3">
-        <test-method signature="LoginAPICarLoan()[pri:0, instance:TestNGPackage.day3@62230c58]" started-at="2022-08-25T23:29:02 IST" name="LoginAPICarLoan" finished-at="2022-08-25T23:29:02 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginAPICarLoan -->
-        <test-method signature="MobileLoginCarLoan()[pri:0, instance:TestNGPackage.day3@62230c58]" started-at="2022-08-25T23:29:02 IST" name="MobileLoginCarLoan" finished-at="2022-08-25T23:29:02 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MobileLoginCarLoan -->
-        <test-method signature="WebLoginCarLoan()[pri:0, instance:TestNGPackage.day3@62230c58]" started-at="2022-08-25T23:29:02 IST" name="WebLoginCarLoan" finished-at="2022-08-25T23:29:02 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebLoginCarLoan -->
-      </class> <!-- TestNGPackage.day3 -->
       <class name="TestNGPackage.day4">
-        <test-method signature="LoginAPIHomeLoan()[pri:0, instance:TestNGPackage.day4@74455848]" started-at="2022-08-25T23:29:02 IST" name="LoginAPIHomeLoan" finished-at="2022-08-25T23:29:02 IST" duration-ms="8" status="PASS">
+        <test-method signature="LoginAPIHomeLoan()[pri:0, instance:TestNGPackage.day4@15bbf42f]" started-at="2022-08-27T01:08:49 IST" name="LoginAPIHomeLoan" finished-at="2022-08-27T01:08:49 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAPIHomeLoan -->
-        <test-method signature="WebLoginHomeLoan()[pri:0, instance:TestNGPackage.day4@74455848]" started-at="2022-08-25T23:29:02 IST" name="WebLoginHomeLoan" finished-at="2022-08-25T23:29:02 IST" duration-ms="3" status="PASS">
+        <test-method signature="WebLoginHomeLoan()[pri:0, instance:TestNGPackage.day4@15bbf42f]" started-at="2022-08-27T01:08:49 IST" name="WebLoginHomeLoan" finished-at="2022-08-27T01:08:49 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLoginHomeLoan -->
-        <test-method signature="WobileLoginHomeLoan()[pri:0, instance:TestNGPackage.day4@74455848]" started-at="2022-08-25T23:29:02 IST" name="WobileLoginHomeLoan" finished-at="2022-08-25T23:29:02 IST" duration-ms="2" status="PASS">
+        <test-method signature="WobileLoginHomeLoan()[pri:0, instance:TestNGPackage.day4@15bbf42f]" started-at="2022-08-27T01:08:49 IST" name="WobileLoginHomeLoan" finished-at="2022-08-27T01:08:49 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WobileLoginHomeLoan -->
       </class> <!-- TestNGPackage.day4 -->
     </test> <!-- Personal Loan -->
+    <test started-at="2022-08-27T01:08:49 IST" name="Car Loan" finished-at="2022-08-27T01:08:49 IST" duration-ms="9">
+      <class name="TestNGPackage.day1">
+        <test-method is-config="true" signature="Afsuite()[pri:0, instance:TestNGPackage.day1@a2431d0]" started-at="2022-08-27T01:08:49 IST" name="Afsuite" finished-at="2022-08-27T01:08:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Afsuite -->
+      </class> <!-- TestNGPackage.day1 -->
+      <class name="TestNGPackage.day3">
+        <test-method is-config="true" signature="Bfsuite()[pri:0, instance:TestNGPackage.day3@73e22a3d]" started-at="2022-08-27T01:08:49 IST" name="Bfsuite" finished-at="2022-08-27T01:08:49 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bfsuite -->
+        <test-method is-config="true" signature="Beforeevery()[pri:0, instance:TestNGPackage.day3@73e22a3d]" started-at="2022-08-27T01:08:49 IST" name="Beforeevery" finished-at="2022-08-27T01:08:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforeevery -->
+        <test-method signature="LoginAPICarLoan()[pri:0, instance:TestNGPackage.day3@73e22a3d]" started-at="2022-08-27T01:08:49 IST" name="LoginAPICarLoan" finished-at="2022-08-27T01:08:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPICarLoan -->
+        <test-method is-config="true" signature="Afterevery()[pri:0, instance:TestNGPackage.day3@73e22a3d]" started-at="2022-08-27T01:08:49 IST" name="Afterevery" finished-at="2022-08-27T01:08:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Afterevery -->
+        <test-method is-config="true" signature="Beforeevery()[pri:0, instance:TestNGPackage.day3@73e22a3d]" started-at="2022-08-27T01:08:49 IST" name="Beforeevery" finished-at="2022-08-27T01:08:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforeevery -->
+        <test-method signature="WebLoginCarLoan()[pri:0, instance:TestNGPackage.day3@73e22a3d]" started-at="2022-08-27T01:08:49 IST" name="WebLoginCarLoan" finished-at="2022-08-27T01:08:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+        <test-method is-config="true" signature="Afterevery()[pri:0, instance:TestNGPackage.day3@73e22a3d]" started-at="2022-08-27T01:08:49 IST" name="Afterevery" finished-at="2022-08-27T01:08:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Afterevery -->
+      </class> <!-- TestNGPackage.day3 -->
+    </test> <!-- Car Loan -->
   </suite> <!-- Loan Department -->
 </testng-results>
