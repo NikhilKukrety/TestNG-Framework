@@ -1,5 +1,6 @@
 package TestNGPackage;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -25,10 +26,16 @@ public class day3 {
 		System.out.println("I will execute after every test method in day 3 class");
 	}
 	
-	@Test
+	@AfterClass
+	public void AfterClass()
+	{
+		System.out.print("After executing all the methods in this class");
+	}
+	
+	@Test(groups = {"Smoke"})
 	public void MobileLoginCarLoan()
 	{
-		System.out.println("WobileLoginCarLoan");
+		System.out.println("MobileLoginCarLoan");
 	}
 	
 	@BeforeSuite //The scope of it is entire xml file. So this test will be executed very first at project level

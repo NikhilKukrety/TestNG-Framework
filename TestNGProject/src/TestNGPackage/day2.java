@@ -1,11 +1,12 @@
 package TestNGPackage;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class day2 {
 	
-	@Test
+	@Test(groups = {"Smoke"})
 	public void ploan()
 	{
 		System.out.println("good");
@@ -17,5 +18,23 @@ public class day2 {
 		System.out.println("I will execute first");
 	}
 	
+	@BeforeClass
+	public void BeforeClass()
+	{
+		System.out.println("Before all the methods in the class");
+	}
+	
+	//IMPORTANT:
+	/*Let's say client says I want to pick these test cases and test them as "smoke", of his choice from each class.
+	 * Then, we will be picking up these test cases by assigning them to "GROUPS".
+	 * We will do this by using below syntax:
+	 * Syntax: @Test(groups = {"Smoke"})
+	 *And in the xml file, give below to run them:
+	 *<groups>
+  		<run>
+  		<include name="Smoke"/>
+  		</run>
+  	</groups>
+	*/
 
 }

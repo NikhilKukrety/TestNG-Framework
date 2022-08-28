@@ -10,10 +10,10 @@ public class day4 {
 		System.out.println("WebLoginHomeLoan");
 	}
 	
-	@Test
-	public void WobileLoginHomeLoan()
+	@Test(groups = {"Smoke"})
+	public void MobileLoginHomeLoan()
 	{
-		System.out.println("WobileLoginHomeLoan");
+		System.out.println("MobileLoginHomeLoan");
 	}
 	
 	@Test
