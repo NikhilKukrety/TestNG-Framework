@@ -32,7 +32,7 @@ public class day2 {
 	 *And in the xml file, give below to run them:
 	 *<groups>
   		<run>
-  		<include name="Smoke"/>
+  		<include name="Smoke"/> or we can use "exclude" to avoid only these test cases to run.
   		</run>
   	</groups>
 	*/
