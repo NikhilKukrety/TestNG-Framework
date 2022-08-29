@@ -4,17 +4,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class day3 {
 	
-	@Parameters({"URL"}) //Basically, we are driving data from xml file. We are getting the value of url from xml file, putting it in "urlName" and then printing it. Parameterization can be suite level or test level.
+	@Parameters({"URL","APIKey/username"}) //Basically, we are driving data from xml file. We are getting the value of url from xml file, putting it in "urlName" and then printing it. Parameterization can be suite level or test level.
 	@Test
-	public void WebLoginCarLoan(String urlname)
+	public void WebLoginCarLoan(String urlname, String key)
 	{
 		System.out.println("webLoginCarLoan");
-		System.out.println(urlname); //qaclickacademy.com will be printed
+		System.out.println(urlname);
+		System.out.println(key);//123456 will be printed
 	}
 	
 	@BeforeMethod //Basically, now this method will be executed before every time the other tests in this class run.
@@ -52,6 +54,50 @@ public class day3 {
 	{
 		System.out.println("APICarLoan");
 	}
+	
+	@Test(dataProvider = "getData") //By doing this, we are catching the 3 sets of test data from getData() method on this method
+	public void MobileSignOutCarloan(String username, String password)
+	{
+		System.out.println("Mobile SIGNOUT");
+		System.out.println(username);
+		System.out.println(password);
+	}
+	
+	//VERY IMPORTANT:
+	//Now, let's say I want to send three sets of data to the above test case and run it with these 3 sets of test data. Use below:
+	
+	@DataProvider
+	public Object[][] getData()
+	{
+		//Let's say, we want 3 sets of data, and each set contains 2 test data, username and password:
+		//1. User with good credit score - username and password
+		//2. User with no credit score - username and password
+		//3. Fraud user - username and password
+		
+		//So, 3 sets of data and each set has 2 test data, So matrix will be like below:
+		Object[][] data = new Object[3][2];
+		
+		//Now, using the object "data", we will assign the values:
+		//1st set:
+		data[0][0] = "firstsetusername";
+		data[0][1] = "password";
+		
+		//2nd set:
+		data[1][0] = "secondsetusername";
+		data[1][1] = "secondpassword";
+		
+		//3rd set:
+		data[2][0] = "thirdsetusername";
+		data[2][1] = "thirdpassword";
+		return data;
+		
+		
+		
+		
+	}
+	
+	
+	
 	
 	//Let's say we want to exclude MobileLoginCarLoan in our tests. So we will do like this in xml file:
 	/*
