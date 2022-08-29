@@ -36,5 +36,9 @@ public class day2 {
   		</run>
   	</groups>
 	*/
-
+	
+	
+	/* To run 2 tests at suite level in parallel, give below:
+	 * <suite name="Loan Department" parallel = "tests" thread-count = "2"> 
+	 */
 }

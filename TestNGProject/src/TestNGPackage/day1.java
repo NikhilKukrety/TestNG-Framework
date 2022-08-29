@@ -1,5 +1,6 @@
 package TestNGPackage;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
@@ -21,6 +22,7 @@ public class day1 {
 	public void Demo()
 	{
 		System.out.println("Hello");
+		Assert.assertTrue(false); //Interview question - We are intentionally failing this test case to check if listernes will let us know which test case failed.
 	}
 	
 	@AfterSuite ////The scope of it is entire xml file. So this test will be executed very last at project level
